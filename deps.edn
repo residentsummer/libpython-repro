@@ -1,0 +1,21 @@
+{:paths   ["clj/src"]
+ :deps    {clj-python/libpython-clj                                 {:mvn/version "2.025"}
+           org.clojure/clojure                                      {:mvn/version "1.12.0"}}
+ :aliases {:bootstrap
+           {:deps
+            {io.github.clojure/tools.build {:mvn/version "0.10.5"}
+             org.clojure/tools.deps {:mvn/version "0.21.1449"}}}
+
+           :repl
+           {:extra-deps
+            {nrepl/nrepl {:mvn/version "0.8.3"}
+             cider/cider-nrepl {:mvn/version "0.50.2"}}}
+
+           :dev
+           {:extra-paths ["clj/src-dev"]
+            :extra-deps  {io.github.clojure/tools.build {:mvn/version "0.10.5"}}}
+           :prod
+           {:extra-paths ["clj/src-prod"]}
+
+           ;;
+           }}

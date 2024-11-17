@@ -1,0 +1,3 @@
+asyncio-gevent==0.2.3
+gevent==21.12.0
+python-javabridge==4.0.4
