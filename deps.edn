@@ -12,10 +12,7 @@
              cider/cider-nrepl {:mvn/version "0.50.2"}}}
 
            :dev
-           {:extra-paths ["clj/src-dev"]
-            :extra-deps  {io.github.clojure/tools.build {:mvn/version "0.10.5"}}}
-           :prod
-           {:extra-paths ["clj/src-prod"]}
+           {:extra-deps  {io.github.clojure/tools.build {:mvn/version "0.10.5"}}}
 
            ;;
            }}
